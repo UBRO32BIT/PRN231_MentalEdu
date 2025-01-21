@@ -1,0 +1,6 @@
+@MentalEdu_APIServices_HostAddress = http://localhost:5118
+
+GET {{MentalEdu_APIServices_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
