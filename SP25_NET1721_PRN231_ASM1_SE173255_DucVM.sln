@@ -5,9 +5,11 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentalEdu_Repositories", "MentalEdu_Repositories\MentalEdu_Repositories.csproj", "{CEA41E0E-B251-4728-983C-EDD30E9CC5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MentalEdu_Services", "MentalEdu_Services\MentalEdu_Services.csproj", "{E7EC556F-1E94-4838-BCC3-B24A75183977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentalEdu_Services", "MentalEdu_Services\MentalEdu_Services.csproj", "{E7EC556F-1E94-4838-BCC3-B24A75183977}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MentalEdu_APIServices", "MentalEdu_APIServices\MentalEdu_APIServices.csproj", "{FCD5F443-A46D-4E09-BE33-014237C1983E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MentalEdu_APIServices", "MentalEdu_APIServices\MentalEdu_APIServices.csproj", "{FCD5F443-A46D-4E09-BE33-014237C1983E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MentalEdu.MVCWebApp.PE.DucVM", "MentalEdu.MVCWebApp.PE.DucVM\MentalEdu.MVCWebApp.PE.DucVM.csproj", "{C334741A-87EB-40FA-A268-0653D17FB559}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FCD5F443-A46D-4E09-BE33-014237C1983E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCD5F443-A46D-4E09-BE33-014237C1983E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCD5F443-A46D-4E09-BE33-014237C1983E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C334741A-87EB-40FA-A268-0653D17FB559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C334741A-87EB-40FA-A268-0653D17FB559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C334741A-87EB-40FA-A268-0653D17FB559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C334741A-87EB-40FA-A268-0653D17FB559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,10 +6,15 @@ namespace MentalEdu_Services
     public class UserAccountService
     {
         private UserAccountRepository _repository;
-        public UserAccountService(UserAccountRepository repository)
+        public UserAccountService()
         {
-            _repository = repository;
+            _repository = new UserAccountRepository();
         }
+        public Task<UserAccount?> Authenticate(string username, string password)
+        {
+            return _repository.GetUserAccountAsync(username, password);
+        }
+
 
         public async Task<IEnumerable<UserAccount>> GetUserAccountsAsync()
         {

@@ -1,5 +1,6 @@
 ﻿using MentalEdu_Repositories.Models;
 using MentalEdu_Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,6 +19,7 @@ namespace MentalEdu_APIServices.Controllers
 
         // GET: api/<SurveyTypesController>
         [HttpGet]
+        [Authorize(Roles = "1, 2")]
         public IEnumerable<SurveyType> Get()
         {
             return _surveyTypeService.GetAllAsync().Result;
@@ -25,6 +27,7 @@ namespace MentalEdu_APIServices.Controllers
 
         // GET api/<SurveyTypesController>/5
         [HttpGet("{id}")]
+        [Authorize(Roles = "1, 2")]
         public SurveyType Get(int id)
         {
             return _surveyTypeService.GetById(id).Result;
@@ -32,6 +35,7 @@ namespace MentalEdu_APIServices.Controllers
 
         // POST api/<SurveyTypesController>
         [HttpPost]
+        [Authorize(Roles = "1, 2")]
         public IActionResult Create([FromBody] SurveyType payload)
         {
             _surveyTypeService.AddAsync(payload).Wait();
@@ -40,12 +44,14 @@ namespace MentalEdu_APIServices.Controllers
 
         // PUT api/<SurveyTypesController>/5
         [HttpPut("{id}")]
+        [Authorize(Roles = "1, 2")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
         // DELETE api/<SurveyTypesController>/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "1, 2")]
         public void Delete(int id)
         {
         }
